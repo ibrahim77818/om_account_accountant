@@ -1,0 +1,22 @@
+{
+    'name': 'Odoo 16 Recurring Payment',
+    'author': 'Odoo Mates',
+    'category': 'Accounting',
+    'version': '16.0.1.1.1',
+    'description': """Odoo 16 Recurring Payment, Recurring Payment In Odoo, Odoo 16 Accounting""",
+    'summary': 'Use recurring payments to handle periodically repeated payments',
+    'sequence': 11,
+    'depends': ['account', 'mail'],
+    'license': 'LGPL-3',
+    'data': [
+        'data/sequence.xml',
+        'data/recurring_cron.xml',
+        'data/mail_activity_type_data.xml',
+        'security/ir.model.access.csv',
+        'security/security.xml',
+        'views/recurring_template_view.xml',
+        'views/recurring_payment_view.xml',
+        'views/auto_post_views.xml',
+    ],
+    'images': ['static/description/banner.gif'],
+}
